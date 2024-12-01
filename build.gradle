@@ -29,7 +29,8 @@ allprojects {
         appAndroidMinSDK = 14
         appAndroidTargetSDK = 34
 
-        gdxVersion = '1.12.1'
+        gdxVersion = '1.13.0'
+        gdxTeaVMVersion = '1.0.4'
         gdxControllersVersion = '2.2.4-SNAPSHOT'
         robovmVersion = '2.3.21'
     }
@@ -39,6 +40,8 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url "https://oss.sonatype.org/content/repositories/releases" }
+        maven { url "https://teavm.org/maven/repository" }
     }
 
 }

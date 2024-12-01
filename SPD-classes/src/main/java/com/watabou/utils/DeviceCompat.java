@@ -49,15 +49,18 @@ public class DeviceCompat {
 	}
 
 	public static boolean isAndroid(){
-		return SharedLibraryLoader.isAndroid;
+		return false;
+		//return SharedLibraryLoader.isAndroid;
 	}
 
 	public static boolean isiOS(){
-		return SharedLibraryLoader.isIos;
+		return false;
+		//return SharedLibraryLoader.isIos;
 	}
 
 	public static boolean isDesktop(){
-		return SharedLibraryLoader.isWindows || SharedLibraryLoader.isMac || SharedLibraryLoader.isLinux;
+		return true;
+		//return SharedLibraryLoader.isWindows || SharedLibraryLoader.isMac || SharedLibraryLoader.isLinux;
 	}
 
 	public static boolean hasHardKeyboard(){
